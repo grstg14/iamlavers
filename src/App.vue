@@ -2,7 +2,6 @@
 <div>
   <transition name="fade">
   <v-app 
-  :key="setup"
   v-show="show" 
   class="setup"
   >
@@ -10,9 +9,9 @@
     <v-content>
       <v-container>
         <v-row>
-        <v-col lg="4" cols="0" />
+        <v-col lg="4" cols="0" xs="0" s="0"/>
 
-        <v-col lg="4" cols="12">
+        <v-col lg="4" cols="12" xs="12" s="12">
           <v-row justify="center" :class="marginTop">
             <router-view>
               <Home />
@@ -27,7 +26,7 @@
             <FooterLogos />
           </v-row>
         </v-col>
-        <v-col lg="4" cols="0"/>
+        <v-col lg="4" cols="0" xs="0" s="0"/>
         </v-row>
       </v-container>
       

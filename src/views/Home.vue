@@ -1,8 +1,7 @@
 <template>
-  <div>
-    <div :style="{'max-width': maxWidthImg }" v-if="showArtwork">
-      <v-img id="artwork" max-width="100%" :src="require('@/assets/artwork.jpg')" />
-    </div>
+  <div :style="{'max-width': maxWidthImg }">
+    <center>
+    <v-img id="" max-width="100%" :src="require('@/assets/artwork.jpg')" /></center>
   </div>
 </template>
 
@@ -16,16 +15,7 @@ export default {
     Naviation
   },
 
-  data() {
-    return {
-      showArtwork: false
-    }
-  },
-
-  mounted() {
-    this.showArtwork = true;
-  },
-
+  
   computed: {
     maxWidthImg() {
       if ((this.$vuetify.breakpoint.xs) || (this.$vuetify.breakpoint.s)) {
