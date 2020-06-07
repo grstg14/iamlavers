@@ -3,7 +3,7 @@
   <transition name="fade">
   <v-app 
   v-show="show" 
-  class="setup"
+  :style="{'background-image': 'url(' + bgUrl + ')', 'background-size':'100% auto', 'background-repeat': 'no-repeat'}"
   >
 
     <v-content>
@@ -69,7 +69,7 @@ export default {
       if ((this.$vuetify.breakpoint.s) || (this.$vuetify.breakpoint.xs)) {
         return "";
       } else {
-        return 'url(' + require('@/assets/bg.jpg') + ')';
+        return require('@/assets/bg.jpg');
       }
     },
 
@@ -87,9 +87,6 @@ export default {
 
 <style>
 
-.setup {
-/*filter: sepia(100%);*/
-}
 
 .fade-enter {
   filter:sepia(200%);
