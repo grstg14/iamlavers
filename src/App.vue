@@ -66,7 +66,7 @@ export default {
 
   computed: {
     bgUrl() {
-      if ((this.$vuetify.breakpoint.s) || (this.$vuetify.breakpoint.xs)) {
+      if ((this.$vuetify.breakpoint.sm) || (this.$vuetify.breakpoint.xs)) {
         return "";
       } else {
         return require('@/assets/bg.jpg');
@@ -74,7 +74,7 @@ export default {
     },
 
     marginTop() {
-      if ((this.$vuetify.breakpoint.s) || (this.$vuetify.breakpoint.xs)) {
+      if ((this.$vuetify.breakpoint.sm) || (this.$vuetify.breakpoint.xs)) {
         return "mt-2"
       } else {
         return "mt-12"

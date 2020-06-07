@@ -52,7 +52,7 @@
 export default {
   computed: {
     small() {
-      if (this.$vuetify.breakpoint.xs || this.$vuetify.breakpoint.s) {
+      if (this.$vuetify.breakpoint.xs || this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.md) {
         return true;
       } else {
         return false;
