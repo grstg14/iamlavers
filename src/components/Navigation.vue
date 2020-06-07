@@ -19,5 +19,6 @@
 <style scoped>
   .navButton {
     font-size:1.5em;
+    font-family: LetterGothicStd;
   }
 </style>
