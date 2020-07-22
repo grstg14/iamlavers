@@ -2,7 +2,7 @@
 <div style="width:500px; max-width:500px;">
   <v-container fluid>
     <v-row justify="center">
-      <v-col lg="4">
+      <v-col lg="6">
         <v-btn 
           href="https://lnk.to/LAVERS" 
           target="_blank" 
@@ -16,7 +16,7 @@
             MUSIC
           </v-btn>
       </v-col>
-      <v-col lg="4">
+      <!--<v-col lg="4">
         <v-btn 
           href="https://www.aexattack.com"
           target="_blank" 
@@ -30,10 +30,10 @@
         >
           2020
         </v-btn>
-      </v-col>
-      <v-col lg="4">
+      </v-col>-->
+      <v-col lg="6">
         <v-btn 
-          href="https://www.instagram.com/axl_aex_vers"
+          href="https://www.instagram.com/axl_vers"
           target="_blank" 
           :ripple="false" 
           :dark="!small" 
